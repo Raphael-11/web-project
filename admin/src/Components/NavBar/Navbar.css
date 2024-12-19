@@ -1,0 +1,48 @@
+/* General styles for the navbar */
+.navbar {
+    display: flex; /* Enables flexbox */
+    justify-content: space-between; /* Logo on the left, profile on the right */
+    align-items: center; /* Vertically center items */
+    background-color: #1f2937; /* Dark background for navbar */
+    padding: 10px 20px; /* Padding for spacing */
+    height: 60px; /* Navbar height */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: fixed; /* Makes the navbar sticky */
+    top: 0; /* Sticks to the top */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensures the navbar stays on top */
+  }
+  
+  /* Logo styling */
+  .nav-logo {
+    height: 40px; /* Adjust logo size */
+    width: auto;
+    cursor: pointer; /* Pointer cursor for interactivity */
+  }
+  
+  /* Profile image styling */
+  .nav-profile {
+    height: 40px; /* Profile icon size */
+    width: 40px;
+    border-radius: 50%; /* Makes the profile icon circular */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .nav-profile:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  /* Mobile responsiveness */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .nav-logo,
+    .nav-profile {
+      height: 35px; /* Smaller logo and profile size on mobile */
+    }
+  }
+  

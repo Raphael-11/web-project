@@ -1,0 +1,46 @@
+.Admin {
+    display: flex;
+    height: 100vh; /* Full height for modern layout */
+    background-color: #f9f9f9; /* Light, clean background */
+    font-family: 'Inter', sans-serif; /* Professional and modern font */
+  }
+  
+  /* Sidebar Styling */
+  .Admin .sidebar {
+    flex: 0 0 280px;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af); /* Subtle gradient */
+    color: #ffffff;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    box-shadow: 3px 0 8px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+  }
+  
+  .Admin .content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .Admin {
+      flex-direction: column;
+    }
+  
+    .Admin .sidebar {
+      flex: 0 0 auto;
+      height: auto;
+    }
+  
+    .Admin .content {
+      margin: 10px;
+      padding: 20px;
+    }
+  }
+  

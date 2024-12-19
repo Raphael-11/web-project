@@ -1,0 +1,33 @@
+/* Breadcrumb Container */
+.breadcrums {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555;
+    margin: 1rem 0;
+  }
+  
+  .breadcrums img {
+    margin: 0 0.5rem;
+    width: 12px;
+    height: 12px;
+  }
+  
+  /* Breadcrumb Links */
+  .breadcrums a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .breadcrums a:hover {
+    color: #0056b3;
+  }
+  
+  /* Last item in breadcrumbs (current page) */
+  .breadcrums span {
+    color: #333;
+    font-weight: 600;
+  }
+  

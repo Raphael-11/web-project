@@ -1,0 +1,101 @@
+.addproduct {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 50px auto;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .addproduct-itemfield {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .addproduct-itemfield p {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .addproduct-itemfield input,
+  .add-product-selector {
+    padding: 15px;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+  
+  .addproduct-itemfield input:focus,
+  .add-product-selector:focus {
+    border-color: #4ca1af; /* Highlighted border on focus */
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgba(76, 161, 175, 0.3); /* Subtle glow */
+  }
+  
+  .addproduct-price {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .addproduct-price .addproduct-itemfield {
+    flex: 1;
+  }
+  
+  .addproduct-thumnail-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 2px dashed #dfe6e9;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .addproduct-thumnail-img:hover {
+    border-color: #4ca1af;
+    transform: scale(1.05);
+  }
+  
+  /* Add Button */
+  .add-product-btn {
+    background-color: #4ca1af;
+    color: #ffffff;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .add-product-btn:hover {
+    background-color: #3b8d99;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .addproduct {
+      padding: 20px;
+    }
+  
+    .addproduct-price {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .addproduct-thumnail-img {
+      width: 140px;
+      height: 140px;
+    }
+  }
+  

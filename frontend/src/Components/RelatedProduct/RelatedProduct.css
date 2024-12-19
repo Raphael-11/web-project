@@ -1,0 +1,108 @@
+/* Container for Related Products */
+.realtedproducts {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Title Styling */
+  .realtedproducts h1 {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Horizontal Divider */
+  .realtedproducts hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #d4af37, #ffdf80);
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 2px;
+  }
+  
+  /* Related Products Grid */
+  .relatedproducts-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    justify-items: center;
+  }
+  
+  /* Individual Item Styling */
+  .item {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 250px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Item Image */
+  .item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #f0f0f0;
+    transition: transform 0.3s ease;
+  }
+  
+  .item:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Item Name */
+  .item p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin: 15px 0;
+    text-transform: capitalize;
+  }
+  
+  /* Prices */
+  .item-prices {
+    margin: 10px 0;
+  }
+  
+  .item-price-new {
+    color: #d4af37;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  
+  .item-price-old {
+    color: #888888;
+    font-size: 1rem;
+    text-decoration: line-through;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .realtedproducts {
+      padding: 20px;
+    }
+  
+    .realtedproducts h1 {
+      font-size: 1.5rem;
+    }
+  
+    .relatedproducts-item {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  

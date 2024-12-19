@@ -1,0 +1,154 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background: linear-gradient(to right, #e3f2fd, #bbdefb);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo Section */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.nav-logo p {
+  color: #1e88e5;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  color: #1a237e;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.nav-menu li:hover {
+  color: #3949ab;
+}
+
+/* Underline for Active Menu Item */
+.nav-menu li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #3949ab;
+  border-radius: 5px;
+  transition: width 0.3s;
+  margin-top: 5px;
+}
+
+.nav-menu li:hover::after {
+  width: 100%;
+}
+
+/* Login Button and Cart Icon */
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Login Button */
+.login-btn {
+  padding: 10px 25px;
+  border: 2px solid #1e88e5;
+  border-radius: 25px;
+  color: #1e88e5;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #1e88e5;
+  color: #fff;
+}
+
+/* Cart Icon Styling */
+.cart-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-icon img {
+  width: 30px;
+  height: 30px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* Cart Count Bubble */
+.nav-cart-count {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 600;
+  background: #e53935;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 20px;
+  }
+
+  .nav-menu {
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+  }
+
+  .nav-menu li {
+      width: 100%;
+      text-align: left;
+  }
+
+  .nav-login-cart {
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 10px;
+  }
+}
+

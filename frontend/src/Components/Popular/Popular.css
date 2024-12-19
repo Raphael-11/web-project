@@ -1,0 +1,155 @@
+/* Popular Section */
+.popular {
+    background: linear-gradient(to bottom, #f7f7f7, #ffffff);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.popular:hover {
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+    /* Slightly stronger shadow on hover */
+}
+
+.popular-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* Text transformed to look sharper and more refined */
+}
+
+.popular-divider {
+    width: 180px;
+    height: 3px;
+    margin: 15px auto;
+    background: linear-gradient(to right, #d4af37, #ffdf80);
+    /* Gold gradient with a more subtle transition */
+    border-radius: 5px;
+    border: none;
+}
+
+.popular-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 30px;
+    justify-items: center;
+    transition: transform 0.3s ease-out;
+}
+
+.popular-item:hover {
+    transform: scale(1.03);
+    /* Subtle zoom effect for emphasis */
+}
+
+/* Item Styling */
+.item {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px;
+    position: relative;
+    overflow: hidden;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+    /* Slight upward movement on hover */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.05);
+    /* Soft brightness increase on hover */
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #eaeaea;
+    transition: transform 0.3s ease;
+}
+
+.item:hover img {
+    transform: scale(1.05);
+    /* Gentle zoom effect on image */
+}
+
+.item p {
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0;
+    text-transform: capitalize;
+    line-height: 1.4;
+}
+
+/* Prices */
+.item-prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.item-price-new {
+    color: #d4af37;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.item-price-old {
+    color: #888888;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: line-through;
+    margin-top: 5px;
+}
+
+/* Button */
+.buy-now {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #d4af37;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    letter-spacing: 1px;
+}
+
+.buy-now:hover {
+    background-color: #b1902d;
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Item Hover Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.popular-item .item {
+    animation: fadeIn 0.6s ease-out;
+    /* Smooth fade-in effect */
+}
+
+
